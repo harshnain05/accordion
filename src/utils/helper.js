@@ -1,4 +1,4 @@
-export const Accordion_Data = [
+export const ACCORDION_DATA = [
     {
         title: "#One",
         discription:

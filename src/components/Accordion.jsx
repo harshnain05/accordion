@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Accordion_Data } from '../utils/helper'
+import { ACCORDION_DATA } from '../utils/helper'
 
 const Accordion = () => {
     const [value, setValue] = useState();
@@ -11,8 +11,8 @@ const Accordion = () => {
             <div className="container justify-center items-center ">
                 <h1 className='text-center text-6xl  mb-[50px]'>Accordion</h1>
                 <div>
-                    {Accordion_Data.map((obj, i) => (
-                        <div key={i} className='max-w-[900px] mx-auto border-2 border-solid rounded-2xl  p-4  mb-3'>
+                    {ACCORDION_DATA.map((obj, i) => (
+                        <div key={i} className='max-w-[900px] cursor-pointer mx-auto border-2 border-solid rounded-2xl  p-4  mb-3'>
                             <div onClick={() => handler(i)} className='flex items-center justify-between'>
                                 {obj.title}
                                 <p className='text-2xl' >{value === i ? "-" : "+"}</p>
