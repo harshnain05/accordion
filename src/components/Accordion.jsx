@@ -15,7 +15,7 @@ const Accordion = () => {
                         <div key={i} className='max-w-[900px] mx-auto border-2 border-solid rounded-2xl  p-4  mb-3'>
                             <div onClick={() => handler(i)} className='flex items-center justify-between'>
                                 {obj.title}
-                                <p >{value === i ? "-" : "+"}</p>
+                                <p className='text-2xl' >{value === i ? "-" : "+"}</p>
                             </div>
                             <div className={`${value === i ? "max-h-20 mt-4 bg-red-500" : "max-h-0 "} transition-all ease-in-out duration-1000 sm:overflow-hidden overflow-auto`}>
                                 <p>{obj.discription}</p>
